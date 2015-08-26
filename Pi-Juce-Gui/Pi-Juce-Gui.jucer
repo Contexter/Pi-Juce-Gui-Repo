@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<JUCERPROJECT id="OqjsMI" name="Pi-Juce-Gui" projectType="guiapp" version="1.0.0"
+              bundleIdentifier="com.yourcompany.PiJuceGui" includeBinaryInAppConfig="1"
+              jucerVersion="3.2.0">
+  <MAINGROUP id="H9dc6L" name="Pi-Juce-Gui">
+    <GROUP id="{49B1ED3D-2D03-3A9D-8B32-6D8C13FB3217}" name="Source">
+      <FILE id="QuqsJV" name="MainComponent.cpp" compile="1" resource="0"
+            file="Source/MainComponent.cpp"/>
+      <FILE id="zRCWLP" name="MainComponent.h" compile="0" resource="0" file="Source/MainComponent.h"/>
+      <FILE id="TAwmSc" name="Main.cpp" compile="1" resource="0" file="Source/Main.cpp"/>
+    </GROUP>
+  </MAINGROUP>
+  <EXPORTFORMATS>
+    <LINUX_MAKE targetFolder="Builds/LinuxMakefile" extraDefs="JUCE_USE_XSHM=0 JUCE_USE_XINERAMA=0">
+      <CONFIGURATIONS>
+        <CONFIGURATION name="Debug" libraryPath="/usr/X11R6/lib/" isDebug="1" optimisation="1"
+                       targetName="Pi-Juce-Gui"/>
+        <CONFIGURATION name="Release" libraryPath="/usr/X11R6/lib/" isDebug="0" optimisation="3"
+                       targetName="Pi-Juce-Gui"/>
+      </CONFIGURATIONS>
+      <MODULEPATHS>
+        <MODULEPATH id="juce_core" path="../Downloads/JUCE-OSX/modules"/>
+        <MODULEPATH id="juce_events" path="../Downloads/JUCE-OSX/modules"/>
+        <MODULEPATH id="juce_graphics" path="../Downloads/JUCE-OSX/modules"/>
+        <MODULEPATH id="juce_data_structures" path="../Downloads/JUCE-OSX/modules"/>
+        <MODULEPATH id="juce_gui_basics" path="../Downloads/JUCE-OSX/modules"/>
+        <MODULEPATH id="juce_gui_extra" path="../Downloads/JUCE-OSX/modules"/>
+        <MODULEPATH id="juce_cryptography" path="../Downloads/JUCE-OSX/modules"/>
+        <MODULEPATH id="juce_video" path="../Downloads/JUCE-OSX/modules"/>
+        <MODULEPATH id="juce_opengl" path="../Downloads/JUCE-OSX/modules"/>
+        <MODULEPATH id="juce_audio_basics" path="../Downloads/JUCE-OSX/modules"/>
+        <MODULEPATH id="juce_audio_devices" path="../Downloads/JUCE-OSX/modules"/>
+        <MODULEPATH id="juce_audio_formats" path="../Downloads/JUCE-OSX/modules"/>
+        <MODULEPATH id="juce_audio_processors" path="../Downloads/JUCE-OSX/modules"/>
+      </MODULEPATHS>
+    </LINUX_MAKE>
+  </EXPORTFORMATS>
+  <MODULES>
+    <MODULES id="juce_audio_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_devices" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_formats" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_audio_processors" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_core" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_cryptography" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_data_structures" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_events" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_graphics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_basics" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_gui_extra" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_opengl" showAllCode="1" useLocalCopy="0"/>
+    <MODULES id="juce_video" showAllCode="1" useLocalCopy="0"/>
+  </MODULES>
+  <JUCEOPTIONS/>
+</JUCERPROJECT>
